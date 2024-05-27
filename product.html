@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicon/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdbcf8b89b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+    <script>
+        function addIntoCart(x) {
+            var product_item = x.parentElement.children;
+            alert(product_item[0].src);
+        }
+    </script>
+</head>
+
+<body>
+    <a name="header"></a>
+    <div class="logo_banner" style="background-image: url(resources/img/Header/TD_Store.png);"></div>
+    <!-- Phần navbar 1 -->
+    <div class="nav-1">
+      <ul class="nav-1_ul">
+        <li><a href="#"><i class="fa-solid fa-tag nav-1_icon"></i><div class="display_none list-p">Khuyến mãi</div></a></li>
+        <li><a href="#"><i class="fa-regular fa-building nav-1_icon"></i><div class="display_none list-p">Hệ thống Showroom</div></a></li>
+        <li><a href="#"><i class="fa-solid fa-briefcase nav-1_icon"></i><div class="display_none list-p">Tư vấn doanh nghiệp</div></a></li>
+        <li><a href="#"><i class="fa-solid fa-headset nav-1_icon"></i><div class="display_none list-p">Liên Hệ</div></a></li>
+        <li><a href="#"><i class="fa-regular fa-newspaper nav-1_icon"></i><div class="display_none list-p">Tin công nghệ</div></a></li>
+        <li><a href="#"><i class="fa-solid fa-wrench nav-1_icon"></i><div class="display_none list-p">Xây dựng cấu hình</div></a></li>
+      </ul>
+    </div>
+    <!-- Phần navbar 2 -->
+    <div class="nav-2">
+      <ul>
+        <li id="nav2-li"><a class="logo" href="index.html"
+            style="background-image: url('resources/img/Header/TD_logo.jpg');"></a></li>
+        <li id="nav2-li" class="li-list"><i id="nav2-icon" class=" list fa-solid fa-bars"></i><a class="list-p" href="#">Danh mục sản
+            phẩm</a>
+          <!-- Navbar List Sản phẩm -->
+          <ul class="nav-list">
+            <li id="list-li1"> <a href="#">Laptop</a>
+              <!-- Các hãng -->
+              <ul class="ul-item1">
+                <li id="li-item">Thương hiệu</li>
+                <li><a href="#">Acer</a></li>
+                <li><a href="#">Lenovo</a></li>
+                <li><a href="#">Asus</a></li>
+                <li><a href="#">Macbook</a></li>
+                <li><a href="#">Hp</a></li>
+              </ul>
+            </li>
+            <li id="list-li2"> <a href="#">Điện thoại</a>
+              <ul class="ul-item2">
+                <li id="li-item">Thương hiệu</li>
+                <li><a href="#">Iphone</a></li>
+                <li><a href="#">Samsung</a></li>
+                <li><a href="#">Redmi</a></li>
+                <li><a href="#">Realmi</a></li>
+                <li><a href="#">LG</a></li>
+              </ul>
+            </li>
+            <li id="list-li2"> <a href="#">Máy tính bảng</a></li>
+            <li id="list-li2"> <a href="#">Linh kiện</a></li>
+            <li id="list-li2"> <a href="#">Đồ gia dụng</a></li>
+          </ul>
+        </li>
+        <li id="nav2-li">
+          <div class="search">
+            <input type="text" placeholder="Nhập sản phẩm cần tìm">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </li>
+        <!-- Đăng Kí/ Đăng Nhập -->
+        <li id="nav2-li" class="sign-in-up-form"><a
+            href="register.html"><i id="nav2-icon" class="sign fa-solid fa-user"></i><div class="display_none list-p">Đăng nhập | Đăng ký</div></a></li>
+        <li id="nav2-li"><a href="#"><i id="nav2-icon" class="notification fa-solid fa-bell"></i></a></li>
+        <!-- Cart -->
+  
+        <li id="nav2-li" class="cart-details"><a href="cart.html"><i id="nav2-icon" class="cart fa-solid fa-cart-shopping"></i><div class="display_none list-p">Giỏ hàng</div></a>
+          <div class="cart-list">
+            <img class="empty-cart" src="./resources/img/Another-Image/empty_cart.png" alt="">
+            <br>
+            <center><span>Chưa có sản phẩm</span>
+              <div class="alert"><a href="./product.html">Mua hàng ngay</a></div>
+            </center>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="more-information">
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="product.html" class="p_active">Product</a></li>
+        <div class="display_none"><li><a href="#footer">Contact</a></li></div>
+      </ul>
+    </div>
+    <a href="#header"><div id="btn_header_page"><i class="fa-solid fa-chevron-up"></i></div></a>
+    <section class="product_section">
+        <div class="filter_product">
+            <div class="filter_module">
+                <h3>Chọn theo tiêu chí / Nhu cầu</h3>
+                <div class="filter_group">
+                    <h4>Thiết bị</h4>
+                    <div class="filter_checklist">
+                        <div class="checkbox"><input type="radio" name="1" checked>Tất cả</div>
+                        <div class="checkbox"><input type="radio" name="1">Điện thoại</div>
+                        <div class="checkbox"><input type="radio" name="1">Laptop</div>
+                    </div>
+                </div>
+                <div class="filter_group">
+                    <h4>Mức giá</h4>
+                    <div class="filter_checklist">
+                        <div class="checkbox"><input type="radio" name="4" checked>Tất cả</div>
+                        <div class="checkbox"><input type="radio" name="4">Dưới 10 triệu</div>
+                        <div class="checkbox"><input type="radio" name="4">Từ 10 - 15 triệu</div>
+                        <div class="checkbox"><input type="radio" name="4">Từ 15 - 20 triệu</div>
+                        <div class="checkbox"><input type="radio" name="4">từ 20 - 25 triệu</div>
+                        <div class="checkbox"><input type="radio" name="4">Trên 25 triệu</div>
+                    </div>
+                </div>
+                <div class="filter_group">
+                    <h4>Hãng sản xuất</h4>
+                    <div class="filter_checklist">
+                        <div class="checkbox"><input type="checkbox" checked>Tất cả</div>
+                        <div class="checkbox"><input type="checkbox">Apple</div>
+                        <div class="checkbox"><input type="checkbox">Samsung</div>
+                        <div class="checkbox"><input type="checkbox">Acer</div>
+                        <div class="checkbox"><input type="checkbox">Gigabyte</div>
+                        <div class="checkbox"><input type="checkbox">Lenovo</div>
+                        <div class="checkbox"><input type="checkbox">Asus</div>
+                        <div class="checkbox"><input type="checkbox">MSI</div>
+                        <div class="checkbox"><input type="checkbox">Xiaomi</div>
+                        <div class="checkbox"><input type="checkbox">Oppo</div>
+                    </div>
+                </div>
+                <div class="filter_group">
+                    <h4>Nhu cầu</h4>
+                    <div class="filter_checklist">
+                        <div class="checkbox"><input type="radio" name="2" checked>Tất cả</div>
+                        <div class="checkbox"><input type="radio" name="2">Gaming</div>
+                        <div class="checkbox"><input type="radio" name="2">Văn phòng</div>
+                        <div class="checkbox"><input type="radio" name="2">Đồ họa</div>
+                        <div class="checkbox"><input type="radio" name="2">Học tập</div>
+                    </div>
+                </div>
+                <div class="filter_group">
+                    <h4>Đánh giá</h4>
+                    <div class="filter_checklist">
+                        <div class="checkbox"><input type="radio" name="3" checked><i class="fa-solid fa-star"></i>Tất
+                            cả</div>
+                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>5 sao</div>
+                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>4 sao</div>
+                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>3 sao</div>
+                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>2 sao</div>
+                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>1 sao</div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_product">
+                <div class="product">
+                    <h2>Điện thoại <span>(10 sản phẩm)</span></h2>
+                    <div class="filter_sort">
+                        <h3>Sắp xếp theo</h3>
+                        <div class="filter_checklist">
+                            <div class="cb_sort1"><i class="fa-solid fa-arrow-down-short-wide"></i>Giá thấp đến cao
+                            </div>
+                            <div class="cb_sort1"><i class="fa-solid fa-arrow-down-wide-short"></i>Giá cao đến thấp
+                            </div>
+                            <div class="cb_sort1"><i class="fa-solid fa-ticket"></i></i>Khuyến mãi hot</div>
+                            <div class="cb_sort1 cb_active"><i class="fa-solid fa-eye"></i></i></i>Xem nhiều</div>
+                        </div>
+                    </div>
+                    <div class="grid_all_product">
+                        <a href="./Product Details/Samsung Galaxy S24 .html" class="product_item">
+                            <img src="resources/img/Samsung Galaxy S24/samsung-galaxy-s24-den-1.jpg" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 2.000.000đ</div>
+                            <div class="item_title">
+                                <p>Samsung Galaxy S24 5G 256GB</p>
+                                <span class="price">19.990.000đ</span>
+                                <span class="price_through">21.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">(5 đánh giá)</span>
+                                <center>
+                                    <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="./Product Details/iPhone 14 Pro Max.html" class="product_item">
+                            <img src="resources/img/iPhone-14-Pro-Max/iphone-14-pro-max-purple-1.jpg" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 1.500.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>iPhone 14 Pro Max 128GB | Chính hãng VN/A</p>
+                                <span class="price">26.990.000đ</span>
+                                <span class="price_through">28.490.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(3 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Trả góp lãi suất 0% & phụ kiện ỐP DÁN</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="./Product Details/Samsung Galaxy Z Fold5.html" div class="product_item">
+                            <img src="resources/img/Samsung-Galaxy-Z-Fold5/samsung-galaxy-zfold5-xanh-256gb-2.jpg"
+                                alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 2.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Samsung Galaxy Z Fold5 5G 256GB</p>
+                                <span class="price">31.990.000đ</span>
+                                <span class="price_through">33.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(10 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Trả góp lãi suất 0% & tặng gói dịch vụ đặc quyền (Samsung Care+ 06 tháng)</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="./Product Details/iPhone 15 Pro Max.html" div class="product_item">
+                            <img src="resources/img/iPhone-15-Pro-Max/iphone-15-pro-max-blue-1-1.jpg" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 2.500.000đ</div>
+                            <div class="item_title">
+                                <p>iPhone 15 Pro Max 256GB | Chính hãng VN/A</p>
+                                <span class="price">30.790.000đ</span>
+                                <span class="price_through">33.290.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">(12 đánh giá)</span>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="./Product Details/Redmi 13T Pro.html" div class="product_item">
+                            <img src="resources/img/Redmi-13T-Pro/xiaomi-13t-pro-xanh-1.jpg" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 1.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Xiaomi 13T Pro 5G 12GB - 256GB</p>
+                                <span class="price">12.790.000đ</span>
+                                <span class="price_through">13.790.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(4 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Giảm thêm 5% (tối đa 200.000đ) khi thu cũ lên đời</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="./Product Details/iPhone 13.html" div class="product_item">
+                            <img src="resources/img/iPhone-13/iphone-13-xanh-1.jpg" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 500.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Iphone 13 128GB | Chính hãng VN/A</p>
+                                <span class="price">15.990.000đ</span>
+                                <span class="price_through">16.490.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(6 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Giảm ngay 1.000.000đ khi thanh toán qua VNPAY</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="./Product Details/Samsung Galaxy S24 Ultra.html" div class="product_item">
+                            <img src="resources/img/Samsung-Galaxy-S24-Ultra/samsung-galaxy-s24-ultra-xam-1.jpg" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 2.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Samsung Galaxy S24 Ultra 5G 256GB</p>
+                                <span class="price">28.490.000đ</span>
+                                <span class="price_through">30.490.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(5 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Trả góp lãi suất 0% & tặng gói dịch vụ đặc quyền (Samsung Care+ 06 tháng)</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="./Product Details/Oppo Find N3.html" div class="product_item">
+                            <img src="resources/img/Oppo-Find-N3/oppo-find-n3-den-1-1.jpg" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 3.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>OPPO Find N3 5G 512GB</p>
+                                <span class="price">41.990.000đ</span>
+                                <span class="price_through">44.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(8 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Giảm ngay 1.000.000đ khi thanh toán qua VNPAY</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="./Product Details/OPPO Find N3 Flip 5G.html" div class="product_item">
+                            <img src="resources/img/Samsung-Galaxy-Z-Flip/samsung-galaxy-zflip5-xanh-256gb-1-1.jpg"
+                                alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 2.000.000đ</div>
+                            <div class="item_title">
+                                <p> Samsung Galaxy Z Flip5 5G 256GB</p>
+                                <span class="price">16.090.000đ</span>
+                                <span class="price_through">18.090.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(1 đánh giá)</span>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="./Product Details/OPPO Find N3 Flip 5G.html" div class="product_item">
+                            <img src="resources/img/Oppo-Find-N3-Flip/oppo-find-n3-flip-pink-1.jpg" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 2.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>OPPO Find N3 Flip 5G Hồng 256GB</p>
+                                <span class="price">22.490.000đ</span>
+                                <span class="price_through">24.490.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(2 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Tặng tai nghe OPPO Enco Air 3</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <h2>Laptop <span>(10 sản phẩm)</span></h2>
+                    <div class="filter_sort">
+                        <h3>Sắp xếp theo</h3>
+                        <div class="filter_checklist">
+                            <div class="cb_sort2"><i class="fa-solid fa-arrow-down-short-wide"></i>Giá thấp đến cao
+                            </div>
+                            <div class="cb_sort2"><i class="fa-solid fa-arrow-down-wide-short"></i>Giá cao đến thấp
+                            </div>
+                            <div class="cb_sort2"><i class="fa-solid fa-ticket"></i></i>Khuyến mãi hot</div>
+                            <div class="cb_sort2 cb_active"><i class="fa-solid fa-eye"></i></i></i>Xem nhiều</div>
+                        </div>
+                    </div>
+                    <div class="grid_all_product">
+                        <a href="Product Details/Macbook-Pro.html" class="product_item">
+                            <img src="resources/img/Mac-Pro-16-M3/macbook_16.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 4.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Macbook Pro 16 M3 Max 36GB - 1TB | Chính hãng Apple Việt Nam</p>
+                                <span class="price">89.990.000đ</span>
+                                <span class="price_through">93.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">(51 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Giảm ngay 1.000.000đ khi thanh toán qua VNPAY</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="Product Details/Acer Nitro V.html" class="product_item">
+                            <img src="resources/img/Acer-Nitro-V/acer_nitro_v.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 3.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Laptop Gaming Acer Nitro V ANV15-51-75GS</p>
+                                <span class="price">29.990.000đ</span>
+                                <span class="price_through">32.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">(25 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Tặng chuột chơi game có dây Dareu EM911 RGB và 1 khuyến mại khác</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="Product Details/Asus Vivobook.html" class="product_item">
+                            <img src="resources/img/Asus-Vivobook-S14/asus_zenbook_s14.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 2.000.000đ</div>
+                            <div class="item_title">
+                                <p>Laptop Asus VivoBook S 14 FLIP TP3402VA-LZ118W</p>
+                                <span class="price">22.990.000đ</span>
+                                <span class="price_through">24.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(45 đánh giá)</span>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="Product Details/Macbook Air.html" class="product_item">
+                            <img src="resources/img/Mac-Air-M2/macbook_air_m2.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 4.000.000đ</div>
+                            <div class="item_title">
+                                <p>Apple Macbook Air M2 2022 8GB 256GB | Chính hãng Apple Việt Nam</p>
+                                <span class="price">24.990.000đ</span>
+                                <span class="price_through">28.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(1 đánh giá)</span>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="Product Details/Asus Zenbook.html" class="product_item">
+                            <img src="resources/img/Asus-Zenbook-S13/asus_zenbook_s13.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 3.500.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Laptop ASUS Zenbook S 13 OLED UX5304VA-NQ125W</p>
+                                <span class="price">32.990.000đ</span>
+                                <span class="price_through">36.490.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(5 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Giảm ngay 1.000.000đ khi thanh toán qua VNPAY</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="Product Details/Acer Aspire 5 .html" class="product_item">
+                            <img src="resources/img/Acer-Aspire-5-Spin14/acer_aspire_5.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 4.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Laptop Acer Aspire 5 Spin 14 A5SP14-51MTN-573X</p>
+                                <span class="price">18.990.000đ</span>
+                                <span class="price_through">22.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">(6 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Giảm ngay 1.000.000đ khi thanh toán qua VNPAY</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="Product Details/Gigabyte G6.html" class="product_item">
+                            <img src="resources/img/Gigabyte-G6-KF/gigabyte_g6.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 5.000.000đ</div>
+                            <div class="item_title">
+                                <p>Laptop Gigabyte G6 KF-H3VN853SH</p>
+                                <span class="price">27.990.000đ</span>
+                                <span class="price_through">32.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(1 đánh giá)</span>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="Product Details/Lenovo LOQ.html" class="product_item">
+                            <img src="resources/img/Lenovo-LOQ-15IRX9/lenovo_loq_15irx9.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 3.500.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Laptop Gaming Lenovo LOQ 15IRX9 83DV000NVN</p>
+                                <span class="price">28.790.000đ</span>
+                                <span class="price_through">32.290.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">(15 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Tặng chuột chơi game có dây Dareu EM911 RGB và 1 khuyến mại khác</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="Product Details/MSI GP66 Leopard.html" class="product_item">
+                            <img src="resources/img/MSI-GP66-Leopard/msi_gp66_leopard.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 4.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Laptop MSI GP66 Leopard 11UE-643VN</p>
+                                <span class="price">33.990.000đ</span>
+                                <span class="price_through">37.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(21 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Phần Mềm Diệt Virut, Office chính hãng chỉ từ 150k</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                        <a href="Product Details/Lenovo ThinkPad.html" class="product_item">
+                            <img src="resources/img/Lenovo_ThinkPad_G2/lenovo_thinkpad_g2_position_2.png" alt="">
+                            <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 5.000.000đ</div>
+                            <div class="gift"><i class="fa-solid fa-gift"></i></div>
+                            <div class="item_title">
+                                <p>Laptop Lenovo ThinkPad P14S G2 T 20VX008GVN</p>
+                                <span class="price">25.990.000đ</span>
+                                <span class="price_through">30.990.000đ</span>
+                                <br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="review">(12 đánh giá)</span>
+                                <div class="voucher_discount">
+                                    <p>Phần Mềm Diệt Virut, Office chính hãng chỉ từ 150k</p>
+                                </div>
+                                <center><button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+                                </center>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a name="footer"></a>
+        <table>
+          <tr>
+            <td><a class="footer-link" href="#">Tích điểm Quà tặng VIP</a></td>
+            <td><a class="footer-link" href="#">Giới thiệu Công Ty</a></td>
+            <td><b class="footer-link">Tổng đài</b></td>
+          </tr>
+    
+          <tr>
+            <td><a class="footer-link" href="#">Lịch sử mua hàng</a></td>
+            <td><a class="footer-link" href="#">Tuyển dụng</a></td>
+            <td><a class="footer-link" href="#">Gọi mua: <span class="footer-num"><b>1900 232 460</b> (7:30-22:00)</span></a>
+            </td>
+          </tr>
+    
+          <tr>
+            <td><a class="footer-link" href="#">Tìm hiểu về mua trả góp</a></td>
+            <td><a class="footer-link" href="#">Gửi góp ý, khiếu nại</a></td>
+            <td><a class="footer-link" href="#">Khiếu nại: <span class="footer-num"><b>1800.1062</b> (8:30-22:00)</span></a>
+              </a></td>
+          </tr>
+          <tr>
+            <td><a class="footer-link" href="#">Chính sách bảo hành </a></td>
+            <td><a class="footer-link" href="#">Tìm chi nhánh</a></td>
+            <td><a class="footer-link" href="#">Bảo hành: <span class="footer-num"><b>1900 232 464</b>
+                  (8:30-21:00)</span></a> </a></td>
+          </tr>
+        </table>
+        <div class="footer-item">
+          <h3> Phương Thức Thanh Toán</h3>
+          <div class="footer-cash">
+            <div class="flex">
+              <i class="footer-icon fa-solid fa-qrcode"></i>
+              Mã QR
+            </div>
+            <div class="flex">
+              <i class="footer-icon fa-solid fa-money-bill"></i>
+              Tiền Mặt
+            </div>
+            <div class="flex">
+              <i class="footer-icon fa-regular fa-clock"></i>
+              Trả Góp
+            </div>
+            <div class="flex">
+              <i class="footer-icon fa-regular fa-credit-card"></i>
+              Chuyển Khoản
+            </div>
+            </div>
+          </div>
+    
+          <div class="footer-bank">
+            <h3>Chấp Nhận Thanh Toán Qua Ngân Hàng</h3>
+            <img src="https://shopfront-cdn.tekoapis.com/static/vnpay_banks.png" alt="" class="footer-img">
+          </div>
+        </div>
+      </footer>
+    <script src="resources/js/scripts.js"></script>
+</body>
+
+</html>
