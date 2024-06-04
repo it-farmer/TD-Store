@@ -82,7 +82,7 @@ function register() {
       emailError.style.fontSize = '12px';
       isValid = false;
   } else {
-      usernameError.textContent = '';
+      emailError.textContent = '';
   }
 
   // Kiểm tra mật khẩu
