@@ -242,6 +242,7 @@
 
    .nav-2{
     padding: 5px;
+    top: 0.2%;
    }
 
    .nav-2 ul{
@@ -261,6 +262,8 @@
    .search input{
     height: 30px;
     width: 200px;
+    margin: 0;
+    padding-left: 10px;
    }
 
    .search button{
@@ -294,14 +297,14 @@
    }
 
    #btn_header_page{
-      top: 80%;
+      top: 85%;
       right: 10px;
    }
 
    .more-information{
     width: 100%;
     position: sticky;
-    top: 91.6%;
+    top: 93.6%;
     box-shadow: 0 0 3px #1e90ff;
     border-radius: 10px;
     border-bottom-left-radius: 0;
@@ -331,6 +334,10 @@
     width: 100%;
    }
 
+   .main_box .banner{
+      height: fit-content;
+     }
+
    .banner:nth-child(1){
     flex-direction: column;
    }
@@ -340,13 +347,19 @@
    }
 
    .mySlides{
-    height: 35vh;
+    height: 25vh;
+   }
+
+   .prev, .next{
+      display: block;
+      background-color: rgba(0,0,0,0.8);
+      margin-top: -30px;
    }
 
    .banner .banner_40{
     flex-direction: row;
     width: 97.5%;
-    height: 30vh;
+    height: 10vh;
     margin-top: 5px;
    }
 
@@ -385,13 +398,13 @@
     left: 10px;
    }
 
-   .panel .active{
-    flex: 2 !important;
+   .panel.active{
+    flex: 2.5 !important;
    }
 
    .active h3{
-    top: 220px !important;
-    left: 40px !important;
+    top: 100% !important;
+    left: 15% !important;
     color: #ff4757 !important;
    }
 
@@ -432,6 +445,7 @@
 
    .product_item{
       width: 45%;
+      padding-bottom: 10%;
    }
 
    .product_item:first-child{
@@ -447,7 +461,7 @@
    }
 
    .discount{
-      width: 60%;
+      width: 70%;
       border-radius: 20px;
    }
 
@@ -478,6 +492,7 @@
    
    .brand_line{
       flex-wrap: wrap;
+      justify-content: center;
       height: 22vh;
    }
 
@@ -490,7 +505,7 @@
    }
 
    .brand{
-      width: 45%;
+      width: 44%;
       height: 10vh;
       margin: 5px 10px;
    }
@@ -619,12 +634,12 @@
    }
 
    .cb_sort1{
-      width: 40%;
+      width: 45%;
       margin: 5px;
    }
 
    .cb_sort2{
-      width: 40%;
+      width: 45%;
       margin: 5px;
    }
 
@@ -635,12 +650,40 @@
    }
 
    .grid_all_product .product_item{
-      width: 47%;
+      width: 47.1%;
       margin: 5px;
+      box-shadow: 0 0 2px;
+   }
+
+   .product_item img{
+      padding: 1%;
+      padding-top: 5%;
+   }
+
+   .grid_all_product .product_item .price_through{
+      margin-left: 5px;
+      font-size: 10px;
+   }
+
+   .grid_all_product .product_item .item_title i{
+      font-size: 12px;
+   }
+
+   .item_title{
+      height: fit-content;
+      margin: 5px 5px;
    }
 
    .item_title .add-items{
-      margin-left: -5%;
+      display: block !important;
+      color: white !important;
+      position: absolute;
+      bottom: 1.5%;
+      background-color: #ff4757;
+      border: none;
+      padding: 0 10px;
+      border-radius: 5px;
+      margin-left: 15%;
    }
 
    .item_title .add-items span{
@@ -648,7 +691,7 @@
    }
 
    .sign-in{
-      height: 87vh;
+      height: 77vh;
       margin-bottom: 0;
    }
 
@@ -730,7 +773,16 @@
    }
 
    #signin a{
-      margin-left: 5%;
+      margin-left: -3%;
+   }
+
+   .sub-btn{
+      margin-left: -5%;
+   }
+
+   .check-box{
+      margin: 13px 10px;
+      margin-left: -1%;
    }
 
    .container{
@@ -740,10 +792,12 @@
    .logo_nav{
       background-image: url('../img/Header/TD_logo1.jpg') !important;
       border-radius: 30%;
+      height: 7%;
    }
 
    .admin_navbar > ul{
       margin-top: 50%;
+      padding-left: 1rem;
    }
 
    .admin_navbar  ul li{
@@ -752,6 +806,10 @@
 
    .admin_navbar > ul > li > a i:nth-child(3){
       display: none;
+   }
+
+   .admin_navbar ul li a i{
+      width: 50%;
    }
 
    .admin_content .d-flex{
@@ -776,7 +834,7 @@
    }
 
    .logo_admin{
-      width: 23%;
+      width: 38%;
    }
 
    .dashboard_box{
@@ -814,5 +872,9 @@
 
     .card-body .text-start{
       text-align: center !important;
+    }
+
+    .col-9{
+      width: 100%;
     }
 }

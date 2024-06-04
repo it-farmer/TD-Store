@@ -300,6 +300,12 @@ li{
   z-index: 100;
 }
 
+.nav-list img{
+  width: 50px;
+  height: 50px;
+  margin-right: 5%;
+}
+
 .nav-list li{
   margin-left: 10px;
   padding-right: 40px;
@@ -384,6 +390,19 @@ li{
 .search button:hover{
   background-color: #8bc5ff;
   transition: all 0.5s;
+}
+
+#myULSearch{
+  width: 80%;
+}
+
+#myULSearch li{
+  padding: 0;
+}
+
+#myULSearch a{
+  display: flex;
+  align-items: center;
 }
 
 /*----------------------------------Login Form-------------------------------------*/
@@ -483,13 +502,13 @@ li{
 }
 
 .check-box{
-  margin: 33px 10px;
+  margin: 13px 10px;
 }
 
 .input span{
   color:#777 ;
   font-size: 12px;
-  bottom: 68px;
+  bottom: 48px;
   position: absolute;
 }
 
@@ -773,7 +792,7 @@ li{
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 10px 0 0 10px;
 }
 
 .slideshow-container:hover .prev, .slideshow-container:hover .next{

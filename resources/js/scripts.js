@@ -9,6 +9,35 @@ window.onscroll = function() {
   }
 };
 
+//------------------SEARCH PRODUCT------------------
+function searchProduct(){
+  var myUl = document.getElementById('myULSearch');
+  var myLi = myUl.getElementsByTagName('li');
+  var valueSearch = document.getElementById('mySearch').value;
+
+  // Hiển thị danh sách sản phẩm khi có giá trị tìm kiếm
+  myUl.setAttribute('style','display: block !important;left: 11%; top: 110%; overflow: hidden; height: fit-content;');
+
+
+  // Ẩn danh sách sản phẩm khi người dùng nhấp ra ngoài
+  document.addEventListener('click', function (event) {
+    if (!myUl.contains(event.target)) {
+        myUl.style.display = 'none';
+      }
+  });
+
+  for (i = 0; i < myLi.length; i++) {
+    var a = myLi[i].getElementsByTagName("a")[0]; // lấy phần tử đầu tiên trong chuỗi (getElementsByTagName trả về chuỗi)
+    var txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(valueSearch.toUpperCase()) > -1) {
+      myLi[i].style.display = "";
+    } else {
+      myLi[i].style.display = "none";
+    }
+  }
+}
+
+
 //------------------REGISTER----------------------
 var x=document.getElementById("signin");
 var y=document.getElementById("signup");
@@ -25,6 +54,87 @@ function signin(){
     y.style.left="450px";
     z.style.left="0px";
 }
+
+// Kiểm tra và lưu thông tin đăng ký
+function register() {
+  const username = document.getElementById('register-username').value;
+  const useremail = document.getElementById('register-email').value;
+  const password = document.getElementById('register-password').value;
+
+  let isValid = true;
+
+  // Kiểm tra tên người dùng
+  const usernameError = document.getElementById('username-error');
+  if (username === '') {
+      usernameError.textContent = 'Tên đăng nhập không được để trống';
+      usernameError.style.color = 'red';
+      usernameError.style.fontSize = '12px';
+      isValid = false;
+  } else {
+      usernameError.textContent = '';
+  }
+
+  // Kiểm tra email
+  const emailError = document.getElementById('email-error');
+  if (useremail === '') {
+      emailError.textContent = 'Email không được để trống';
+      emailError.style.color = 'red';
+      emailError.style.fontSize = '12px';
+      isValid = false;
+  } else {
+      usernameError.textContent = '';
+  }
+
+  // Kiểm tra mật khẩu
+  const passwordError = document.getElementById('password-error');
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+  if (!passwordRegex.test(password)) {
+      passwordError.textContent = 'Mật khẩu phải hơn 8 kí tự, có kí tự hoa, số và kí tự đặc biệt.';
+      passwordError.style.color = 'red';
+      passwordError.style.fontSize = '12px';
+      isValid = false;
+  } else {
+      passwordError.textContent = '';
+  }
+
+  if (isValid) {
+      // Lưu thông tin người dùng vào local storage
+      localStorage.setItem('username', username);
+      localStorage.setItem('useremail', useremail);
+      localStorage.setItem('password', password);
+      alert('Đăng Kí thành công');
+  }
+}
+
+// Kiểm tra thông tin đăng nhập
+function login() {
+  event.preventDefault();
+  const username = document.getElementById('login-username').value;
+  const password = document.getElementById('login-password').value;
+
+  // Lấy thông tin người dùng từ local storage
+  const registeredUsername = localStorage.getItem('username');
+  const registeredPassword = localStorage.getItem('password');
+
+  // Kiểm tra thông tin đăng nhập
+  if (username == registeredUsername && password == registeredPassword) {
+      alert('Đăng nhập thành công');
+      const temp = localStorage.getItem('useremail');
+      localStorage.setItem('useremail1', temp);
+      window.location.href = 'index.html'; 
+  } else {
+      alert('Sai tên đăng nhập hoặc mật khẩu.');
+  }
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  if(localStorage.getItem('useremail1') == null || localStorage.getItem('useremail1').trim() == ''){
+  }
+  else{
+    const mainUsername = localStorage.getItem('username');
+    document.getElementById('user-login').innerText = 'Hi, ' + mainUsername;
+  }
+})
 
 // -----------------SLIDESHOW---------------------
 

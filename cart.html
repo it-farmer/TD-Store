@@ -73,13 +73,63 @@
       </li>
       <li id="nav2-li">
         <div class="search">
-          <input type="text" placeholder="Nhập sản phẩm cần tìm">
+          <input type="text" autocomplete="off" id="mySearch" oninput="searchProduct()" placeholder="Nhập sản phẩm cần tìm">
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <ul id="myULSearch" class="nav-list">
+            <li><a href="Product Details/Acer Aspire 5 .html">
+                <img src="resources/img/Acer-Aspire-5-Spin14/acer_aspire_5.png" alt="">Acer Aspire 5 Spin14</a></li>
+            <li><a href="Product Details/Acer Nitro V.html">
+                <img src="resources/img/Acer-Nitro-V/acer_nitro_v.png" alt="">Acer Nitro V</a></li>
+            <li><a href="Product Details/Asus Vivobook.html">
+              <img src="resources/img/Asus-Vivobook-S14/asus_zenbook_s14.png" alt="">Asus Vivobook S14</a></li>
+            <li><a href="Product Details/Asus Zenbook.html">
+              <img src="resources/img/Asus-Zenbook-S13/asus_zenbook_s13.png" alt="">Asus Zenbook S13</a></li>
+
+            <li><a href="Product Details/Gigabyte G6.html">
+              <img src="resources/img/Gigabyte-G6-KF/gigabyte_g6.png" alt="">Gigabyte G6 KF</a></li>
+
+            <li><a href="Product Details/iPhone 13.html">
+              <img src="resources/img/iPhone-13/iphone-13-xanh-1.jpg" alt="">iPhone 13</a></li>
+            <li><a href="Product Details/iPhone 14 Pro Max.html">
+              <img src="resources/img/iPhone-14-Pro-Max/iphone-14-pro-max-purple-1.jpg" alt="">iPhone 14 Pro Max</a></li>
+            <li><a href="Product Details/iPhone 15 Pro Max.html">
+              <img src="resources/img/iPhone-15-Pro-Max/iphone-15-pro-max-blue-1-1.jpg" alt="">iPhone 15 Pro Max</a></li>
+
+            <li><a href="Product Details/Lenovo LOQ.html">
+              <img src="resources/img/Lenovo-LOQ-15IRX9/lenovo_loq_15irx9.png" alt="">Lenovo LOQ</a></li>
+            <li><a href="Product Details/Lenovo ThinkPad.html">
+              <img src="resources/img/Lenovo_ThinkPad_G2/lenovo_thinkpad_g2.png" alt="">Lenovo ThinkPad G2</a></li>
+
+            <li><a href="Product Details/Macbook-Pro.html">
+              <img src="resources/img/Mac-Pro-16-M3/macbook_16.png" alt="">Macbook Pro</a></li>
+            <li><a href="Product Details/Macbook Air.html">
+              <img src="resources/img/Mac-Air-M2/macbook_air_m2.png" alt="">Macbook Air</a></li>
+
+            <li><a href="Product Details/MSI GP66 Leopard.html">
+              <img src="resources/img/MSI-GP66-Leopard/msi_gp66_leopard.png" alt="">MSI GP66 Leopard</a></li>
+
+            <li><a href="Product Details/Oppo Find N3.html">
+              <img src="resources/img/Oppo-Find-N3/oppo-find-n3-den-1-1.jpg" alt="">Oppo Find N3</a></li>
+            <li><a href="Product Details/OPPO Find N3 Flip 5G.html">
+              <img src="resources/img/Oppo-Find-N3-Flip/oppo-find-n3-flip-pink-1.jpg" alt="">Oppo Find N3 Flip 5G</a></li>
+
+            <li><a href="Product Details/Redmi 13T Pro.html">
+              <img src="resources/img/Redmi-13T-Pro/xiaomi-13t-pro-xanh-1.jpg" alt="">Redmi 13T Pro</a></li>
+
+            <li><a href="Product Details/Samsung Galaxy S24 .html">
+              <img src="resources/img/Samsung Galaxy S24/samsung-galaxy-s24-den-1.jpg" alt="">Samsung Galaxy S24</a></li>
+            <li><a href="Product Details/Samsung Galaxy S24 Ultra.html">
+              <img src="resources/img/Samsung-Galaxy-S24-Ultra/samsung-galaxy-s24-ultra-xam-1.jpg" alt="">Samsung Galaxy S24 Ultra</a></li>
+            <li><a href="Product Details/Samsung Galaxy Z Flip.html">
+              <img src="resources/img/Samsung-Galaxy-Z-Flip/samsung-galaxy-zflip5-xanh-256gb-1-1.jpg" alt="">Samsung Galaxy Z Flip</a></li>
+            <li><a href="Product Details/Samsung Galaxy Z Fold5.html">
+              <img src="resources/img/Samsung-Galaxy-Z-Fold5/samsung-galaxy-zfold5-xanh-256gb-2.jpg" alt="">Samsung Galaxy Z Fold5</a></li>
+          </ul>
         </div>
       </li>
       <!-- Đăng Kí/ Đăng Nhập -->
       <li id="nav2-li" class="sign-in-up-form"><a
-          href="register.html"><i id="nav2-icon" class="sign fa-solid fa-user"></i><div class="display_none list-p">Đăng nhập | Đăng ký</div></a></li>
+          href="register.html"><i id="nav2-icon" class="sign fa-solid fa-user"></i><div id="user-login" class="display_none list-p">Đăng nhập | Đăng ký</div></a></li>
       <li id="nav2-li"><a href="#"><i id="nav2-icon" class="notification fa-solid fa-bell"></i></a></li>
       <!-- Cart -->
 

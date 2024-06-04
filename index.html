@@ -26,12 +26,24 @@
   <!-- Phần navbar 1 -->
   <div class="nav-1">
     <ul class="nav-1_ul">
-      <li><a href="#"><i class="fa-solid fa-tag nav-1_icon"></i><div class="display_none list-p">Khuyến mãi</div></a></li>
-      <li><a href="#"><i class="fa-regular fa-building nav-1_icon"></i><div class="display_none list-p">Hệ thống Showroom</div></a></li>
-      <li><a href="#"><i class="fa-solid fa-briefcase nav-1_icon"></i><div class="display_none list-p">Tư vấn doanh nghiệp</div></a></li>
-      <li><a href="#"><i class="fa-solid fa-headset nav-1_icon"></i><div class="display_none list-p">Liên Hệ</div></a></li>
-      <li><a href="#"><i class="fa-regular fa-newspaper nav-1_icon"></i><div class="display_none list-p">Tin công nghệ</div></a></li>
-      <li><a href="#"><i class="fa-solid fa-wrench nav-1_icon"></i><div class="display_none list-p">Xây dựng cấu hình</div></a></li>
+      <li><a href="#"><i class="fa-solid fa-tag nav-1_icon"></i>
+          <div class="display_none list-p">Khuyến mãi</div>
+        </a></li>
+      <li><a href="#"><i class="fa-regular fa-building nav-1_icon"></i>
+          <div class="display_none list-p">Hệ thống Showroom</div>
+        </a></li>
+      <li><a href="#"><i class="fa-solid fa-briefcase nav-1_icon"></i>
+          <div class="display_none list-p">Tư vấn doanh nghiệp</div>
+        </a></li>
+      <li><a href="#"><i class="fa-solid fa-headset nav-1_icon"></i>
+          <div class="display_none list-p">Liên Hệ</div>
+        </a></li>
+      <li><a href="#"><i class="fa-regular fa-newspaper nav-1_icon"></i>
+          <div class="display_none list-p">Tin công nghệ</div>
+        </a></li>
+      <li><a href="#"><i class="fa-solid fa-wrench nav-1_icon"></i>
+          <div class="display_none list-p">Xây dựng cấu hình</div>
+        </a></li>
     </ul>
   </div>
   <!-- Phần navbar 2 -->
@@ -39,7 +51,8 @@
     <ul>
       <li id="nav2-li"><a class="logo" href="index.html"
           style="background-image: url('resources/img/Header/TD_logo.jpg');"></a></li>
-      <li id="nav2-li" class="li-list"><i id="nav2-icon" class=" list fa-solid fa-bars"></i><a class="list-p" href="#">Danh mục sản
+      <li id="nav2-li" class="li-list"><i id="nav2-icon" class=" list fa-solid fa-bars"></i><a class="list-p"
+          href="#">Danh mục sản
           phẩm</a>
         <!-- Navbar List Sản phẩm -->
         <ul class="nav-list">
@@ -71,17 +84,80 @@
       </li>
       <li id="nav2-li">
         <div class="search">
-          <input type="text" placeholder="Nhập sản phẩm cần tìm">
+          <input type="text" autocomplete="off" id="mySearch" oninput="searchProduct()"
+            placeholder="Nhập sản phẩm cần tìm">
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <ul id="myULSearch" class="nav-list">
+            <li><a href="Product Details/Acer Aspire 5 .html">
+                <img src="resources/img/Acer-Aspire-5-Spin14/acer_aspire_5.png" alt="">Acer Aspire 5 Spin14</a></li>
+            <li><a href="Product Details/Acer Nitro V.html">
+                <img src="resources/img/Acer-Nitro-V/acer_nitro_v.png" alt="">Acer Nitro V</a></li>
+            <li><a href="Product Details/Asus Vivobook.html">
+                <img src="resources/img/Asus-Vivobook-S14/asus_zenbook_s14.png" alt="">Asus Vivobook S14</a></li>
+            <li><a href="Product Details/Asus Zenbook.html">
+                <img src="resources/img/Asus-Zenbook-S13/asus_zenbook_s13.png" alt="">Asus Zenbook S13</a></li>
+
+            <li><a href="Product Details/Gigabyte G6.html">
+                <img src="resources/img/Gigabyte-G6-KF/gigabyte_g6.png" alt="">Gigabyte G6 KF</a></li>
+
+            <li><a href="Product Details/iPhone 13.html">
+                <img src="resources/img/iPhone-13/iphone-13-xanh-1.jpg" alt="">iPhone 13</a></li>
+            <li><a href="Product Details/iPhone 14 Pro Max.html">
+                <img src="resources/img/iPhone-14-Pro-Max/iphone-14-pro-max-purple-1.jpg" alt="">iPhone 14 Pro Max</a>
+            </li>
+            <li><a href="Product Details/iPhone 15 Pro Max.html">
+                <img src="resources/img/iPhone-15-Pro-Max/iphone-15-pro-max-blue-1-1.jpg" alt="">iPhone 15 Pro Max</a>
+            </li>
+
+            <li><a href="Product Details/Lenovo LOQ.html">
+                <img src="resources/img/Lenovo-LOQ-15IRX9/lenovo_loq_15irx9.png" alt="">Lenovo LOQ</a></li>
+            <li><a href="Product Details/Lenovo ThinkPad.html">
+                <img src="resources/img/Lenovo_ThinkPad_G2/lenovo_thinkpad_g2.png" alt="">Lenovo ThinkPad G2</a></li>
+
+            <li><a href="Product Details/Macbook-Pro.html">
+                <img src="resources/img/Mac-Pro-16-M3/macbook_16.png" alt="">Macbook Pro</a></li>
+            <li><a href="Product Details/Macbook Air.html">
+                <img src="resources/img/Mac-Air-M2/macbook_air_m2.png" alt="">Macbook Air</a></li>
+
+            <li><a href="Product Details/MSI GP66 Leopard.html">
+                <img src="resources/img/MSI-GP66-Leopard/msi_gp66_leopard.png" alt="">MSI GP66 Leopard</a></li>
+
+            <li><a href="Product Details/Oppo Find N3.html">
+                <img src="resources/img/Oppo-Find-N3/oppo-find-n3-den-1-1.jpg" alt="">Oppo Find N3</a></li>
+            <li><a href="Product Details/OPPO Find N3 Flip 5G.html">
+                <img src="resources/img/Oppo-Find-N3-Flip/oppo-find-n3-flip-pink-1.jpg" alt="">Oppo Find N3 Flip 5G</a>
+            </li>
+
+            <li><a href="Product Details/Redmi 13T Pro.html">
+                <img src="resources/img/Redmi-13T-Pro/xiaomi-13t-pro-xanh-1.jpg" alt="">Redmi 13T Pro</a></li>
+
+            <li><a href="Product Details/Samsung Galaxy S24 .html">
+                <img src="resources/img/Samsung Galaxy S24/samsung-galaxy-s24-den-1.jpg" alt="">Samsung Galaxy S24</a>
+            </li>
+            <li><a href="Product Details/Samsung Galaxy S24 Ultra.html">
+                <img src="resources/img/Samsung-Galaxy-S24-Ultra/samsung-galaxy-s24-ultra-xam-1.jpg" alt="">Samsung
+                Galaxy S24 Ultra</a></li>
+            <li><a href="Product Details/Samsung Galaxy Z Flip.html">
+                <img src="resources/img/Samsung-Galaxy-Z-Flip/samsung-galaxy-zflip5-xanh-256gb-1-1.jpg" alt="">Samsung
+                Galaxy Z Flip</a></li>
+            <li><a href="Product Details/Samsung Galaxy Z Fold5.html">
+                <img src="resources/img/Samsung-Galaxy-Z-Fold5/samsung-galaxy-zfold5-xanh-256gb-2.jpg" alt="">Samsung
+                Galaxy Z Fold5</a></li>
+          </ul>
         </div>
       </li>
       <!-- Đăng Kí/ Đăng Nhập -->
-      <li id="nav2-li" class="sign-in-up-form"><a
-          href="register.html"><i id="nav2-icon" class="sign fa-solid fa-user"></i><div class="display_none list-p">Đăng nhập | Đăng ký</div></a></li>
+      <li id="nav2-li" class="sign-in-up-form"><a href="register.html"><i id="nav2-icon"
+            class="sign fa-solid fa-user"></i>
+          <div id="user-login" class="display_none list-p">Đăng nhập | Đăng ký</div>
+        </a></li>
       <li id="nav2-li"><a href="#"><i id="nav2-icon" class="notification fa-solid fa-bell"></i></a></li>
       <!-- Cart -->
 
-      <li id="nav2-li" class="cart-details"><a href="cart.html"><i id="nav2-icon" class="cart fa-solid fa-cart-shopping"></i><div class="display_none list-p">Giỏ hàng</div></a>
+      <li id="nav2-li" class="cart-details"><a href="cart.html"><i id="nav2-icon"
+            class="cart fa-solid fa-cart-shopping"></i>
+          <div class="display_none list-p">Giỏ hàng</div>
+        </a>
         <div class="cart-list">
           <img class="empty-cart" src="./resources/img/Another-Image/empty_cart.png" alt="">
           <br>
@@ -97,10 +173,14 @@
       <li><a href="index.html" class="p_active">Home Page</a></li>
       <li><a href="about_us.html">About Us</a></li>
       <li><a href="product.html">Product</a></li>
-      <div class="display_none"><li><a href="#footer">Contact</a></li></div>
+      <div class="display_none">
+        <li><a href="#footer">Contact</a></li>
+      </div>
     </ul>
   </div>
-  <a href="#header"><div id="btn_header_page"><i class="fa-solid fa-chevron-up"></i></div></a>
+  <a href="#header">
+    <div id="btn_header_page"><i class="fa-solid fa-chevron-up"></i></div>
+  </a>
   <header class="header">
     <!-- Slideshow container -->
     <div class="main_box">
@@ -219,7 +299,8 @@
               <p>Giảm ngay 1.000.000đ khi thanh toán qua VNPAY</p>
             </div>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
@@ -242,7 +323,8 @@
               <p>Tặng chuột chơi game có dây Dareu EM911 RGB và 1 khuyến mại khác</p>
             </div>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
@@ -265,7 +347,8 @@
               <p>Giảm ngay 1.000.000đ khi thanh toán qua VNPAY</p>
             </div>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
@@ -284,7 +367,8 @@
             <i class="fa-regular fa-star"></i>
             <span class="review">(1 đánh giá)</span>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
@@ -307,7 +391,8 @@
               <p>Tặng chuột chơi game có dây Dareu EM911 RGB và 1 khuyến mại khác</p>
             </div>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
@@ -349,7 +434,8 @@
             <i class="fa-solid fa-star"></i>
             <span class="review">(5 đánh giá)</span>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
@@ -372,7 +458,8 @@
               <p>Trả góp lãi suất 0% & phụ kiện ỐP DÁN</p>
             </div>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
@@ -395,7 +482,8 @@
               <p>Trả góp lãi suất 0% & tặng gói dịch vụ đặc quyền (Samsung Care+ 06 tháng)</p>
             </div>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
@@ -414,7 +502,8 @@
             <i class="fa-regular fa-star"></i>
             <span class="review">(12 đánh giá)</span>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
@@ -437,7 +526,8 @@
               <p>Giảm thêm 5% (tối đa 200.000đ) khi thu cũ lên đời</p>
             </div>
             <center>
-              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào giỏ</span></button>
+              <button onclick="addIntoCart(this)" class="add-items"><i class="fa-solid fa-cart-plus"></i><span>Thêm vào
+                  giỏ</span></button>
             </center>
           </div>
         </a>
