@@ -634,7 +634,7 @@
    }
 
    .cb_sort1{
-      width: 45%;
+      width: 47%;
       margin: 5px;
    }
 
@@ -650,7 +650,7 @@
    }
 
    .grid_all_product .product_item{
-      width: 47.1%;
+      width: 47%;
       margin: 5px;
       box-shadow: 0 0 2px;
    }
@@ -684,6 +684,20 @@
       padding: 0 10px;
       border-radius: 5px;
       margin-left: 15%;
+   }
+
+   .product_item:hover .add-items{
+      display: block !important;
+      color: white !important;
+      height: fit-content;
+      position: absolute;
+      bottom: 1.5%;
+      background-color: #ff4757;
+      border: none;
+      padding: 0 10px;
+      border-radius: 5px;
+      margin-left: 15%;
+      left: 2%;
    }
 
    .item_title .add-items span{
