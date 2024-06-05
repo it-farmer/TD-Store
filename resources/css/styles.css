@@ -283,6 +283,23 @@ li{
   top: 129px;
 }
 
+#logout-button{
+  /* position: absolute;
+  top: 70px;
+  left: 936px; */
+}
+
+.nav-2 .menu{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 99%;
+}
+
+.menu #nav2-icon{
+  font-size: 100%;
+}
+
 /* List Sản Phẩm */
 .list{
   padding-right: 10px;

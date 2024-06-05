@@ -134,7 +134,35 @@ document.addEventListener('DOMContentLoaded',function(){
     const mainUsername = localStorage.getItem('username');
     document.getElementById('user-login').innerText = 'Hi, ' + mainUsername;
   }
+  document.getElementById('logout-button').addEventListener('click', logout);
 })
+
+//Đăng xuất
+function logout() {
+  // Xóa  thông tin người dùng đã đăng nhập
+  localStorage.removeItem('useremail1');
+
+  // Cập nhật giao diện người dùng
+  alert('Bạn đã đăng xuất thành công');
+  location.reload();
+}
+
+const dropmenu2 = document.querySelectorAll('.nav-2 > ul > li > a');
+
+if(localStorage.getItem('useremail1') != null)
+  {
+    for (let index = 0; index < dropmenu2.length; index++) {
+      dropmenu2[index].addEventListener('click',(a)=>{
+        if(dropmenu2[index].parentNode.querySelector('ul').classList.contains('li_active')){  
+          a.preventDefault(); 
+          dropmenu2[index].parentNode.querySelector('ul').classList.remove('li_active');
+        }else{
+          a.preventDefault();
+          dropmenu2[index].parentNode.querySelector('ul').classList.add('li_active');
+        }
+      })
+  }
+}
 
 // -----------------SLIDESHOW---------------------
 
