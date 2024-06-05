@@ -283,12 +283,6 @@ li{
   top: 129px;
 }
 
-#logout-button{
-  /* position: absolute;
-  top: 70px;
-  left: 936px; */
-}
-
 .nav-2 .menu{
   position: absolute;
   top: 50%;
@@ -577,13 +571,51 @@ li{
   color: gray;
 }
 
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cart-items li {
+ 
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+#cart-items li {
+  
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+#cart-items {
+  display: block;
+}
+
+#cart-items .item-title,
+#cart-items .item-price,
+#cart-items .item-quantity {
+  margin-bottom: 5px;
+}
+
+.remove-item {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
 .alert{
-  background-color: blue;
+  background-color: blue !important;
   height: 50px;
   width: fit-content;
-  padding: 13px;
+  padding: 13px !important;
   margin-top: 20px;
-  border-radius: 15px;
+  border-radius: 15px !important;
+  color: white !important;
 }
 .alert a{
   color: white;
@@ -708,6 +740,199 @@ li{
 
 .card-body .d-flex .form-outline{
   text-align: center !important;
+}
+
+#checkout-items {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#checkout-items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#checkout-items li:last-child {
+  border-bottom: none;
+}
+
+#checkout-items img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-title {
+  flex-grow: 1;
+  font-size: 18px;
+  color: #495057;
+}
+
+#checkout-items .item-title{
+  width: 30%;
+  margin: 0 20px;
+}
+
+.item-price {
+  font-size: 18px;
+  color: #28a745;
+}
+
+.item-quantity {
+  font-size: 18px;
+}
+
+#checkout-items .item-quantity{
+  margin: 0 10px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+#checkout-items  button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  height: 30px;
+}
+
+#Btn-CF{
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+}
+
+button.change-quantity {
+  background-color: #ffc107;
+  color: #343a40;
+  margin: 0 5px;
+}
+
+button.change-quantity:hover {
+  background-color: #e0a800;
+}
+
+button.delete-item {
+  background-color: #dc3545;
+}
+
+button.delete-item:hover {
+  background-color: #c82333;
+}
+
+#total-price {
+  text-align: center;
+  font-size: 24px;
+  color: #dc3545;
+  margin-top: 20px;
+}
+
+button#submit-order {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  background-color: #28a745;
+}
+
+button#submit-order:hover {
+  background-color: #218838;
+}
+.confirm-check{
+  text-align: center;
+}
+
+/*------------------=========Xác nhận đặt hàng=======-----------------------*/
+.confirm {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirm h1, .confirm h2 {
+  text-align: center;
+  color: #343a40;
+}
+
+.confirm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirm label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+.confirm input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.confirm button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm button[type="button"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.confirm button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+#order-summary {
+  text-align: center;
+}
+
+#order-summary p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#order-summary button {
+  background-color: #28a745;
+  color: white;
+}
+
+#order-summary button:hover {
+  background-color: #218838;
 }
 
 /* --------------------------------------- */
@@ -1299,8 +1524,35 @@ table a{
   grid-template-columns: 1fr 1fr;
 }
 
+.member{
+  position: relative;
+}
+
+.member h2::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 12%;
+  height: 1px;
+  width: 50%;
+  background-color: white;
+}
+
 .project{
   text-align: justify;
+  position: relative;
+}
+
+.project h2::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 12%;
+  height: 1px;
+  width: 50%;
+  background-color: white;
 }
 
 .content_about_us a{

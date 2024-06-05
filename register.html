@@ -139,13 +139,22 @@
       <li id="nav2-li"><a href="#"><i id="nav2-icon" class="notification fa-solid fa-bell"></i></a></li>
       <!-- Cart -->
 
-      <li id="nav2-li" class="cart-details"><a href="cart.html"><i id="nav2-icon" class="cart fa-solid fa-cart-shopping"></i><div class="display_none list-p">Giỏ hàng</div></a>
+      <li id="nav2-li" class="cart-details">
+        <a href="cart.html">
+          <i id="nav2-icon" class="cart fa-solid fa-cart-shopping"></i>
+          <div class="display_none list-p">Giỏ hàng (<span id="cart-item-count">0</span>)</div>
+        </a>
         <div class="cart-list">
-          <img class="empty-cart" src="./resources/img/Another-Image/empty_cart.png" alt="">
-          <br>
-          <center><span>Chưa có sản phẩm</span>
-            <div class="alert"><a href="./product.html">Mua hàng ngay</a></div>
-          </center>
+          <div id="no-product">
+            <img class="empty-cart" src="./resources/img/Another-Image/empty_cart.png" alt="">
+            <br>
+            <center><span>Chưa có sản phẩm</span>
+              <div class="alert"><a href="./product.html">Mua hàng ngay</a></div>
+            </center>
+          </div>
+          
+          <ul id="cart-items"></ul>
+          <a href="cart.html"><div class="alert" id="checkout">Thanh toán</div></a>
         </div>
       </li>
     </ul>
