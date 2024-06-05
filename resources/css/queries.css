@@ -68,11 +68,33 @@
    margin-left: -3% !important;
   }
 
+  .add-items{
+   display: block;
+   transition: all 0.5s;
+   display: flex;
+   height: 40px;
+   align-items: center;
+   color: white !important;
+   padding: 0 10px;
+   cursor: pointer;
+   background-color: #ff4757;
+   border-radius: 5px;
+   font-size: 15px;
+   position: absolute;
+   bottom: 10px;
+   left: 26%;
+   border: none;
+ }
+ 
   .grid_all_product .product_item{
-   width: 100%;
+   width: 98%;
    height: 480px;
   }
 
+  .product_item{
+   border: 1px solid black !important;
+   
+  }
   .all_product > .product:nth-child(2) .grid_all_product .product_item{
    width: 100%;
    height: 560px;
@@ -119,7 +141,19 @@
  .about_us{
    height: fit-content;
  }
+ /* Logout button */
 
+ #logout-button{
+   display: flex;
+   width: 150px;
+   position: relative;
+   top: -10px;
+   
+ }
+
+ #logout-button #sp-logout{
+   
+ }
   /* ----------Footer--------- */
   footer {
     font-size: 12px;
@@ -203,15 +237,17 @@
    text-align: center;
    margin: 0 auto;
 }
-
 }
-
 
 /* Small phones from 0 to 480px; */
 @media only screen and (max-width: 480px){
 
    html{
       font-size: 14px;
+   }
+
+   body{
+      min-height: 100vh;
    }
 
    .logo_banner{
@@ -572,10 +608,10 @@
       content: "";
       display: block;
       position: absolute;
-      width: 60%;
+      width: 80%;
       height: 1px;
       background-color: white;
-      left: 20%;
+      left: 10%;
       top: -10px;
    }
 
@@ -890,5 +926,52 @@
 
     .col-9{
       width: 100%;
+    }
+
+    #checkout-items{
+      width: 90%;
+    }
+
+    #checkout-items li{
+      flex-direction: column;
+    }
+
+    #checkout-items .item-title{
+      width: 100%;
+      margin: 20px auto;
+    }
+
+    #checkout-items .item-price{
+      margin: 10px auto;
+    }
+
+    #checkout-items .quantity-control{
+      margin: 10px auto;
+    }
+
+    #checkout-items .card-body img{
+      margin-bottom: 40px;
+    }
+
+    .member h2::after{
+      content: "";
+      display: block;
+      position: absolute;
+      left: 25%;
+      top: 22%;
+      height: 1px;
+      width: 50%;
+      background-color: white;
+    }
+
+    .project h2::after{
+      content: "";
+      display: block;
+      position: absolute;
+      left: 25%;
+      top: 7%;
+      height: 1px;
+      width: 50%;
+      background-color: white;
     }
 }
