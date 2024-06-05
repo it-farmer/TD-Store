@@ -164,63 +164,63 @@
                 <div class="filter_group">
                     <h4>Thiết bị</h4>
                     <div class="filter_checklist">
-                        <div class="checkbox"><input type="radio" name="1" checked>Tất cả</div>
-                        <div class="checkbox"><input type="radio" name="1">Điện thoại</div>
-                        <div class="checkbox"><input type="radio" name="1">Laptop</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="thietbi" value="0" type="radio" name="1" checked>Tất cả</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="thietbi" value="1" type="radio" name="1">Điện thoại</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="thietbi" value="2" type="radio" name="1">Laptop</div>
                     </div>
                 </div>
                 <div class="filter_group">
                     <h4>Mức giá</h4>
                     <div class="filter_checklist">
-                        <div class="checkbox"><input type="radio" name="4" checked>Tất cả</div>
-                        <div class="checkbox"><input type="radio" name="4">Dưới 10 triệu</div>
-                        <div class="checkbox"><input type="radio" name="4">Từ 10 - 15 triệu</div>
-                        <div class="checkbox"><input type="radio" name="4">Từ 15 - 20 triệu</div>
-                        <div class="checkbox"><input type="radio" name="4">từ 20 - 25 triệu</div>
-                        <div class="checkbox"><input type="radio" name="4">Trên 25 triệu</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="giaban" value="0" type="radio" name="4" checked>Tất cả</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="giaban" value="1" type="radio" name="4">Dưới 10 triệu</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="giaban" value="2" type="radio" name="4">Từ 10 - 15 triệu</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="giaban" value="3" type="radio" name="4">Từ 15 - 20 triệu</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="giaban" value="4" type="radio" name="4">từ 20 - 25 triệu</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="giaban" value="5" type="radio" name="4">Trên 25 triệu</div>
                     </div>
                 </div>
                 <div class="filter_group">
                     <h4>Hãng sản xuất</h4>
                     <div class="filter_checklist">
-                        <div class="checkbox"><input type="checkbox" checked>Tất cả</div>
-                        <div class="checkbox"><input type="checkbox">Apple</div>
-                        <div class="checkbox"><input type="checkbox">Samsung</div>
-                        <div class="checkbox"><input type="checkbox">Acer</div>
-                        <div class="checkbox"><input type="checkbox">Gigabyte</div>
-                        <div class="checkbox"><input type="checkbox">Lenovo</div>
-                        <div class="checkbox"><input type="checkbox">Asus</div>
-                        <div class="checkbox"><input type="checkbox">MSI</div>
-                        <div class="checkbox"><input type="checkbox">Xiaomi</div>
-                        <div class="checkbox"><input type="checkbox">Oppo</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="0" type="checkbox" checked>Tất cả</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="1" type="checkbox">Apple</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="2" type="checkbox">Samsung</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="3" type="checkbox">Acer</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="4" type="checkbox">Gigabyte</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="5" type="checkbox">Lenovo</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="6" type="checkbox">Asus</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="7" type="checkbox">MSI</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="8" type="checkbox">Xiaomi</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="hang" value="9" type="checkbox">Oppo</div>
                     </div>
                 </div>
                 <div class="filter_group">
                     <h4>Nhu cầu</h4>
                     <div class="filter_checklist">
-                        <div class="checkbox"><input type="radio" name="2" checked>Tất cả</div>
-                        <div class="checkbox"><input type="radio" name="2">Gaming</div>
-                        <div class="checkbox"><input type="radio" name="2">Văn phòng</div>
-                        <div class="checkbox"><input type="radio" name="2">Đồ họa</div>
-                        <div class="checkbox"><input type="radio" name="2">Học tập</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="nhucau" value="0" type="radio" name="2" checked>Tất cả</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="nhucau" value="1" type="radio" name="2">Gaming</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="nhucau" value="2" type="radio" name="2">Văn phòng</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="nhucau" value="3" type="radio" name="2">Đồ họa</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="nhucau" value="4" type="radio" name="2">Học tập</div>
                     </div>
                 </div>
                 <div class="filter_group">
                     <h4>Đánh giá</h4>
                     <div class="filter_checklist">
-                        <div class="checkbox"><input type="radio" name="3" checked><i class="fa-solid fa-star"></i>Tất
+                        <div class="checkbox"><input onchange="chonDT()" class="sao" value="0" type="radio" name="3" checked><i class="fa-solid fa-star"></i>Tất
                             cả</div>
-                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>5 sao</div>
-                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>4 sao</div>
-                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>3 sao</div>
-                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>2 sao</div>
-                        <div class="checkbox"><input type="radio" name="3"><i class="fa-solid fa-star"></i>1 sao</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="sao" value="1" type="radio" name="3"><i class="fa-solid fa-star"></i>5 sao</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="sao" value="2" type="radio" name="3"><i class="fa-solid fa-star"></i>4 sao</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="sao" value="3" type="radio" name="3"><i class="fa-solid fa-star"></i>3 sao</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="sao" value="4" type="radio" name="3"><i class="fa-solid fa-star"></i>2 sao</div>
+                        <div class="checkbox"><input onchange="chonDT()" class="sao" value="5" type="radio" name="3"><i class="fa-solid fa-star"></i>1 sao</div>
                     </div>
                 </div>
             </div>
             <div class="all_product">
-                <div class="product">
-                    <h2>Điện thoại <span>(10 sản phẩm)</span></h2>
+                <div class="product" id="dienthoai">
+                    <h2>Điện thoại <span id="numberMobile">(10 sản phẩm)</span></h2>
                     <div class="filter_sort">
                         <h3>Sắp xếp theo</h3>
                         <div class="filter_checklist">
@@ -232,7 +232,7 @@
                             <div class="cb_sort1 cb_active"><i class="fa-solid fa-eye"></i></i></i>Xem nhiều</div>
                         </div>
                     </div>
-                    <div class="grid_all_product">
+                    <div class="grid_all_product" id="list_product">
                         <a href="./Product Details/Samsung Galaxy S24 .html" class="product_item">
                             <img src="resources/img/Samsung Galaxy S24/samsung-galaxy-s24-den-1.jpg" alt="">
                             <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 2.000.000đ</div>
@@ -403,7 +403,7 @@
                                 </center>
                             </div>
                         </a>
-                        <a href="./Product Details/OPPO Find N3 Flip 5G.html" div class="product_item">
+                        <a href="./Product Details/Samsung Galaxy Z Flip.html" div class="product_item">
                             <img src="resources/img/Samsung-Galaxy-Z-Flip/samsung-galaxy-zflip5-xanh-256gb-1-1.jpg"
                                 alt="">
                             <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 2.000.000đ</div>
@@ -447,8 +447,8 @@
                     </div>
                 </div>
 
-                <div class="product">
-                    <h2>Laptop <span>(10 sản phẩm)</span></h2>
+                <div class="product" id="laptop">
+                    <h2>Laptop <span id="numberLaptop">(10 sản phẩm)</span></h2>
                     <div class="filter_sort">
                         <h3>Sắp xếp theo</h3>
                         <div class="filter_checklist">
@@ -460,7 +460,7 @@
                             <div class="cb_sort2 cb_active"><i class="fa-solid fa-eye"></i></i></i>Xem nhiều</div>
                         </div>
                     </div>
-                    <div class="grid_all_product">
+                    <div class="grid_all_product" id="list_product">
                         <a href="Product Details/Macbook-Pro.html" class="product_item">
                             <img src="resources/img/Mac-Pro-16-M3/macbook_16.png" alt="">
                             <div class="discount"><i class="fa-solid fa-fire"></i>Giảm 4.000.000đ</div>
