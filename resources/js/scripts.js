@@ -57,6 +57,7 @@ function signin(){
 
 // Kiểm tra và lưu thông tin đăng ký
 function register() {
+  event.preventDefault();
   const username = document.getElementById('register-username').value;
   const useremail = document.getElementById('register-email').value;
   const password = document.getElementById('register-password').value;
@@ -103,6 +104,7 @@ function register() {
       localStorage.setItem('useremail', useremail);
       localStorage.setItem('password', password);
       alert('Đăng Kí thành công');
+      window.location.href = 'register.html';
   }
 }
 
